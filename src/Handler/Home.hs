@@ -29,6 +29,8 @@ getHomeR = do
             <h1>
                 SITE EM CONSTRUCAO!
                 
+            <img src=@{StaticR rpg_jpg}>
+                
             <button class="btn btn-danger" onclick="ola()">
                 OK
         |]

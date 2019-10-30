@@ -12,8 +12,23 @@ import Database.Persist.Postgresql
 
 getHomeR :: Handler Html
 getHomeR = do
-    defaultLayout $
+    defaultLayout $ do
+        addStylesheet (StaticR css_bootstrap_css)
+    
+        toWidgetHead [julius|
+            function ola(){
+                alert("CONTRUCAO");
+            }
+        |]
+        toWidgetHead [lucius|
+            h1 {
+                color: red;
+            }
+        |]
         [whamlet|
             <h1>
                 SITE EM CONSTRUCAO!
+                
+            <button class="btn btn-danger" onclick="ola()">
+                OK
         |]

@@ -56,10 +56,10 @@ getHomeR = do
                 
             <ul>
                 <li>
-                    <a href=@{Page1R}
+                    <a href=@{Page1R}>
                         Pagina1
                 <li>
-                    <a href=@{Page2R}
+                    <a href=@{Page2R}>
                         Pagina2
                 
             <button class="btn btn-danger" onclick="ola()">

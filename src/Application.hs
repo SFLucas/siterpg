@@ -139,7 +139,7 @@ develMain = develMainHelper getApplicationDev
 -- | The @main@ function for an executable running this site.
 appMain :: IO ()
 appMain = do
-    let cp s = "/etc/letsencrypt/live/nexrpg.tk/" ++ s
+    let cp s = "/etc/letsencrypt/live/nexrpg.ml/" ++ s
     settings <- loadYamlSettingsArgs
         [configSettingsYmlValue]
         useEnv

@@ -17,8 +17,24 @@ body{
     overflow-y: auto;
 }
 
-.app__cabecalho{
-    grid-row: 1/2;
+.app__nav-bar{
+    display: grid;
+    grid-template-columns: 1fr auto auto auto 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    border: 3px solid #000;
+}
+
+.app__nav-bar > p{
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    transition: color .4s;
+}
+
+.app__nav-bar > p:hover{
+    color: #cd9527;
 }
 
 .app__rodape{
@@ -61,4 +77,15 @@ button:hover{
     transform: translateY(-5px);
     -webkit-box-shadow: 0px 0px 21px 4px rgba(205,149,39,0.91); 
     box-shadow: 0px 0px 21px 4px rgba(205,149,39,0.91);
+}
+
+.app__footer{
+    border: 3px solid #000;
+    display: grid;
+}
+
+.app__footer > p{
+    text-align: center;
+    height: fit-content;
+    align-self: center;
 }

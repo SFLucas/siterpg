@@ -18,3 +18,23 @@ getArmaR = do
         toWidgetHead $(luciusFile "templates/main.lucius")
         toWidgetHead $(luciusFile "templates/arma.lucius")
         $(whamletFile "templates/arma.hamlet")
+        
+postArmaR :: Handler Html
+postArmaR = do
+    formArma <- runInputGet $ Arma
+        <$> ireq textField "nome"
+        <*> ireq doubleField "preco"
+        <*> ireq doubleField "peso"
+        <*> ireq textField "dano"
+        <*> ireq textField "propriedades"
+        
+    ((result,_),_) <- runInputPost formArma
+    case result of 
+        FormSuccess arma -> do 
+            runDB $ insert arma
+            setMessage [shamlet|
+                <h2>
+                    PRODUTO INSERIDO COM SUCESSO
+            |]
+            redirect ProdutoR
+        _ -> redirect HomeR 

@@ -25,13 +25,14 @@
             <main class="app__form">
                 <h1>
                     Cadastro de Arma
-                <input type="text" placeholder="Nome" name="nomeArma">
-                <input type="number" placeholder="Preço" name="precoArma">
-                <input type="number" placeholder="Peso" name="pesoArma">
-                <input type="number" placeholder="Dano" name="danoArma">
-                <input type="text" placeholder="Propriedades" name="propsArma">
-                <button>
-                    Salvar
+                <form action=@{ArmaR}>
+                    <input type="text" placeholder="Nome" name="nomeArma">
+                    <input type="number" placeholder="Preço" name="precoArma">
+                    <input type="number" placeholder="Peso" name="pesoArma">
+                    <input type="number" placeholder="Dano" name="danoArma">
+                    <input type="text" placeholder="Propriedades" name="propsArma">
+                    <button>
+                        Salvar
     
             <footer class="app__footer">
                 <p>

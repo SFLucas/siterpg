@@ -5,4 +5,4 @@
 
 / HomeR GET
 
-/cadarma ArmaR GET
+/cadarma ArmaR GET POST

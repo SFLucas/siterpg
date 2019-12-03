@@ -2,5 +2,5 @@ Arma
     nome Text
     preco Double
     peso Double
-    dano Int
+    dano Text
     prop Text

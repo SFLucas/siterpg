@@ -1,0 +1,136 @@
+.app{
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-rows: 60px 2fr 3fr 60px;
+    overflow-y: auto;
+}
+
+.app__nav-bar{
+    display: grid;
+    grid-template-columns: 1fr auto auto auto 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    border: 3px solid #000;
+}
+
+.app__nav-bar > p{
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    transition: color .4s;
+}
+
+.app__nav-bar > p:hover{
+    color: #cd9527;
+}
+
+.app__main-content{
+    border: 3px solid #cd9527;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.app__main-content > p{
+    width: fit-content;
+    height: fit-content;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-self: end;
+    justify-self: center;
+}
+
+.app__main-content > p:first-of-type{
+    margin-bottom: 20px;
+}
+
+.app__main-content > button{
+    align-self: center;
+    justify-self: center;
+}
+
+
+.app__cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr;
+    gap: 5px;
+}
+
+.app__cards > h1{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.app__cards > p{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    text-align: center;
+}
+
+.app__cards > p:first-of-type{
+    align-self: start;
+}
+
+.app__cards > p:last-of-type{
+    align-self: end;
+}
+
+.app__cards__holder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 15px;
+    grid-column: 1/-1;
+}
+
+.app__cards__holder__card{
+    height: 100%;
+    width: 75%;
+    background-color: tomato;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    border: 3px solid #000;
+}
+
+
+.app__cards__holder__card > img{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 10vw;
+    max-width: 200px;
+    justify-self: center;
+    align-self: center;
+    border: 3px solid #000;
+}
+
+.app__cards__holder__card > p{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: center;
+    font-size: 25px;
+}
+
+.app__cards__holder__card > button{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: center;
+}
+
+.app__footer{
+    border: 3px solid #000;
+    display: grid;
+}
+
+.app__footer > p{
+    text-align: center;
+    height: fit-content;
+    align-self: center;
+}

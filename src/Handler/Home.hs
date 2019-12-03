@@ -15,7 +15,6 @@ import Database.Persist.Postgresql
 getHomeR :: Handler Html
 getHomeR = do
     defaultLayout $ do
-        toWidgetHead $(juliusFile "templates/index.julius")
         toWidgetHead $(luciusFile "templates/main.lucius")
         toWidgetHead $(luciusFile "templates/index.lucius")
         $(whamletFile "templates/index.hamlet")

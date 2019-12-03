@@ -40,8 +40,9 @@
                         <p>
                             Arma
                         <img src="http://designconceitual.com.br/wp-content/uploads/2017/06/3dd22a29691495.55ffd68228546-e1496935549209.jpg" alt="Arma">
-                        <button onclick={@ArmaR}>
-                            Cadastrar
+                        <button>
+                            <a href={@ArmaR}
+                                Cadastrar
                     
                     <div class="app__cards__holder__card">
                         <p>

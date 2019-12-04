@@ -1,0 +1,51 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                Nome
+            <th>
+                Classe
+            <th>
+                Raça
+            <th>
+                Alinhamento
+            <th>
+                Background
+            <th>
+                Força
+            <th>
+                Destreza
+            <th>
+                Constituição
+            <th>
+                Inteligência
+            <th>
+                Sabedoria
+            <th>
+                Carisma
+
+    <tbody>
+        $forall Entity fid ficha <- fichas
+            <tr>
+                <td>
+                    #{fichaNome ficha}
+                <td>
+                    #{fichaClasse ficha}
+                <td>
+                    #{fichaRaca ficha}
+                <td>
+                    #{fichaAlinha ficha}
+                <td>
+                    #{fichaBack ficha}
+                <td>
+                    #{fichaForca ficha}
+                <td>
+                    #{fichaDestreza ficha}
+                <td>
+                    #{fichaConstit ficha}
+                <td>
+                    #{fichaInteligencia ficha}
+                <td>
+                    #{fichaSabedoria ficha}
+                <td>
+                    #{fichaCarisma ficha}

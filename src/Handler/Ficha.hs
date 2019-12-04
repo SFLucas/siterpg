@@ -42,4 +42,10 @@ postFichaR = do
         FormSuccess ficha -> do
             runDB $ insert ficha
             redirect FichaR
-        _ -> redirect HomeR 
+        _ -> redirect HomeR
+        
+getListFichaR :: Handler Html 
+getListFichaR = do 
+    fichas <- runDB $ selectList [] [Asc FichaNome]
+    defaultLayout $ do 
+        $(whamletFile "templates/fichas.hamlet")

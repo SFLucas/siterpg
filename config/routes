@@ -16,3 +16,4 @@
 /listarmagia ListMagiaR GET
 
 /ficha FichaR GET POST
+/listarficha ListFichaR GET

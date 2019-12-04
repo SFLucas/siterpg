@@ -28,7 +28,7 @@ postArmaR = do
         <*> ireq textField "danoArma"
         <*> ireq textField "propsArma"
         
-    ((result,_),_) <- runInputPost formArma
+    ((result,_),_) <- runFormPost formArma
     case result of 
         FormSuccess arma -> do
             runDB $ insert arma

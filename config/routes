@@ -13,5 +13,6 @@
 /listartalento ListTalentoR GET
 
 /magia MagiaR GET POST
+/listarmagia ListMagiaR GET
 
 /ficha FichaR GET POST

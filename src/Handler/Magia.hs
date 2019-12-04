@@ -36,5 +36,11 @@ postMagiaR = do
     case result of 
         FormSuccess magia -> do
             runDB $ insert magia
-            redirect MagiaR
+            redirect ListMagiaR
         _ -> redirect HomeR
+        
+getListMagiaR :: Handler Html 
+getListMagiaR = do 
+    magias <- runDB $ selectList [] [Asc MagiaNome]
+    defaultLayout $ do 
+        $(whamletFile "templates/magias.hamlet")

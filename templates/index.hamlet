@@ -14,7 +14,8 @@
                 <p>
                     Ficha
                 <p>
-                    Base de Dados
+                    <a href=@{ListArmaR}
+                        Base de Dados
                 <p>
                     Sobre
                 <p>

@@ -19,13 +19,13 @@
                 <p>
                     Sobre
     
-            <main class="app__form">
-                <h1>
-                    Cadastro de Arma
-                <form method=post action=@{ArmaR}>
+            <form method=post action=@{ArmaR}>
+                <main class="app__form">
+                    <h1>
+                        Cadastro de Arma
                     ^{widget}
-                    <button>
-                        Salvar
+                <button>
+                    Salvar
     
             <footer class="app__footer">
                 <p>

@@ -25,3 +25,6 @@
                     #{armaDano arma}
                 <td>
                     #{armaProp arma}
+                <td>
+                    <form method=post action=@{ApagarArmaR aid}>
+                        <input type="submit" value="X">

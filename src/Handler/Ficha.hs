@@ -13,15 +13,11 @@ import Text.Julius
 import Database.Persist.Postgresql
 
 formFicha :: Form Ficha
-formFicha = renderBootstrap $ Ficha 
+formFicha = renderBootstrap $ Ficha
     <$> areq textField "Nome: " Nothing
-    <*> areq intField "Nivel: " Nothing
-    <*> areq intField "Vida: " Nothing
     <*> areq textField "Classe: " Nothing
     <*> areq textField "Raça: " Nothing
-    <*> areq intField "Armadura: " Nothing
     <*> areq textField "Alinhamento: " Nothing
-    <*> areq intField "Bônus de Proficiência: " Nothing
     <*> areq textField "Background: " Nothing
     <*> areq textField "Vínculos: " Nothing
     <*> areq textField "Ideais: " Nothing

@@ -20,13 +20,9 @@ Magia
     
 Ficha
     nome Text
-    nivel Int
-    vida Int
     classe Text
     raca Text
-    arm Int
     alinha Text
-    prof Int
     back Text
     vinculo Text
     ideal Text

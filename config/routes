@@ -5,10 +5,12 @@
 
 / HomeR GET
 
-/cadarma ArmaR GET POST
+/arma ArmaR GET POST
+/listararma ListArmaR GET
+/arma/#ArmaId/apagar ApagarArmaR POST
 
-/cadtalento TalentoR GET POST
+/talento TalentoR GET POST
 
-/cadmagia MagiaR GET POST
+/magia MagiaR GET POST
 
-/cadficha FichaR GET POST
+/ficha FichaR GET POST

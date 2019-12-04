@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>
-        NexRPG
-<body>
-
-    <div class="app">
-
-        
-
-        <main class="app__form">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+            NexRPG
+    <body>
+    
+        <div class="app">
+    
             
-            <h1>
-                Aqui você tem acesso a todas as armas
-
-            <div class="app__form__table">
-                <p>
-                    Nome
-                <p>
-                    Ações
+    
+            <main class="app__form">
+                
+                <h1>
+                    Aqui você tem acesso a todas as armas
+    
+                <div class="app__form__table">
+                    <p>
+                        Nome
+                    <p>
+                        Ações
                 <div class="app__form__table__row">
                     $forall Entity aid arma <- armas
                     <p>
@@ -31,5 +31,5 @@
                         <form method=post action=@{ApagarArmaR aid}>
                             <button>
                                 Excluir
-
-        
+    
+            

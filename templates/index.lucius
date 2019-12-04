@@ -90,7 +90,7 @@
 .app__cards__holder__card{
     height: 100%;
     width: 75%;
-    background-color: tomato;
+    background-color: #84A296;
     justify-self: center;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;

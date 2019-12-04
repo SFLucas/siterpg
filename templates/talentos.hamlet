@@ -1,19 +1,36 @@
-<table>
-    <thead>
-        <tr>
-            <th>
-                Nome
-            <th>
-                Pré-requisito
-            <th>
-                Descrição
+<div class="app">
+    <nav class="app__nav-bar">
+        <p>
+            <a href=@{HomeR}>
+                NexRPG
+        <p>
+            <a href=@{ListFichaR}>
+                Ficha
+        <p>
+            <a href=@{HomeR}>
+                Base de Dados
 
-    <tbody>
-        $forall Entity tid talento <- talentos
-            <tr>
-                <td>
-                    #{talentoNome talento}
-                <td>
-                    #{talentoRequisito talento}
-                <td>
-                    #{talentoDescricao talento}
+     <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Nome
+                    <th>
+                        Pré-requisito
+                    <th>
+                        Descrição
+        
+            <tbody>
+                $forall Entity tid talento <- talentos
+                    <tr>
+                        <td>
+                            #{talentoNome talento}
+                        <td>
+                            #{talentoRequisito talento}
+                        <td>
+                            #{talentoDescricao talento}
+                    
+    <footer class="app__footer">
+        <p>
+            Todos os direitos reservados.

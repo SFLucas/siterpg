@@ -62,12 +62,13 @@
                         <p>
                             Magia
                         <img src="http://4.bp.blogspot.com/-1_JWIS8ECJQ/TiF_Am62a7I/AAAAAAAABjg/EaZ07JDYIus/s1600/archmage.jpg" alt="Magia">
-                        <button class="btn1">
-                            <a href=@{MagiaR}>
-                                Cadastrar
-                        <button class="btn2">
-                            <a href=@{ListMagiaR}>
-                                Vizualizar
+                        <div class="btn-holder">
+                            <button class="btn1">
+                                <a href=@{MagiaR}>
+                                    Cadastrar
+                            <button class="btn2">
+                                <a href=@{ListMagiaR}>
+                                    Vizualizar
                     
             <footer class="app__footer">
                 <p>

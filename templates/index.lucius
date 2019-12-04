@@ -46,9 +46,14 @@
     margin-bottom: 20px;
 }
 
-.app__main-content > a{
+.app__main-content > button{
     align-self: center;
     justify-self: center;
+}
+
+.app__main-content > button > a {
+    text-decoration: none;
+    color: #000;
 }
 
 
@@ -115,6 +120,13 @@
     align-self: center;
     justify-self: center;
     font-size: 25px;
+}
+
+ .app__cards__holder__card > .btn-holder{
+    display: flex;
+    justify-content: space-around;
+    grid-row: 3/4;
+    grid-column: 1/2;
 }
 
 .app__cards__holder__card > .btn1{

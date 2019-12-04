@@ -10,22 +10,20 @@
         <div class="app">
             <nav class="app__nav-bar">
                 <p>
-                    NexRPG
+                    <a href=@{HomeR}>
+                        NexRPG
                 <p>
-                    Ficha
+                    <a href=@{ListFichaR}>
+                        Ficha
                 <p>
-                    <a href=@{ListArmaR}>
+                    <a href=@{HomeR}>
                         Base de Dados
-                <p>
-                    Sobre
-                <p>
-                    Login
             
             <main class="app__main-content">
                 <p>
-                    Sua ficha de personagem de forma rápida e dinâmica.
+                    Um banco com fichas de personagens criadas pela comunidade.
                 <p>
-                    Role um d20 e tenha ela sempre em mãos.
+                    Role um d20 e tenha milhares de fichas a sua escolha.
                 <button>
                     <a href=@{FichaR}>
                         Criar
@@ -41,26 +39,35 @@
                     <div class="app__cards__holder__card">
                         <p>
                             Arma
-                        <img src="http://designconceitual.com.br/wp-content/uploads/2017/06/3dd22a29691495.55ffd68228546-e1496935549209.jpg" alt="Arma">
+                        <img src="https://http2.mlstatic.com/adaga-punhal-medieval-colecionadores-decoraco-na-caixa-D_NQ_NP_977675-MLB25844602855_082017-F.jpg" alt="Arma">
                         <button>
                             <a href=@{ArmaR}>
                                 Cadastrar
+                        <button>
+                            <a href=@{ListArmaR}>
+                                Vizualizar
                     
                     <div class="app__cards__holder__card">
                         <p>
                             Talento
-                        <img src="http://designconceitual.com.br/wp-content/uploads/2017/06/3dd22a29691495.55ffd68228546-e1496935549209.jpg" alt="Talento">
+                        <img src="https://vignette.wikia.nocookie.net/tsrd/images/d/da/Magia-nivel-0-474x234.jpg/revision/latest?cb=20171228121324&path-prefix=pt-br" alt="Talento">
                         <button>
                             <a href=@{TalentoR}>
                                 Cadastrar
+                        <button>
+                            <a href=@{ListTalentoR}>
+                                Vizualizar
                     
                     <div class="app__cards__holder__card">
                         <p>
                             Magia
-                        <img src="http://designconceitual.com.br/wp-content/uploads/2017/06/3dd22a29691495.55ffd68228546-e1496935549209.jpg" alt="Magia">
+                        <img src="http://4.bp.blogspot.com/-1_JWIS8ECJQ/TiF_Am62a7I/AAAAAAAABjg/EaZ07JDYIus/s1600/archmage.jpg" alt="Magia">
                         <button>
                             <a href=@{MagiaR}>
                                 Cadastrar
+                        <button>
+                            <a href=@{ListMagiaR}>
+                                Vizualizar
                     
             <footer class="app__footer">
                 <p>

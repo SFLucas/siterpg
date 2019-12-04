@@ -18,12 +18,11 @@
                     Base de Dados
                 <p>
                     Sobre
-    
-            <form method=post action=@{ArmaR}>
-                <main class="app__form">
-                    <h1>
-                        Cadastro de Arma
-                    ^{widget}
+
+            <form method=post action=@{ArmaR} class="app__form">
+                <h1>
+                    Cadastro de Arma
+                ^{widget}
                 <button>
                     Salvar
     

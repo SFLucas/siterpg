@@ -4,3 +4,8 @@ Arma
     peso Double
     dano Text
     prop Text
+    
+Talento
+    nome Text
+    requisito Text
+    descricao Text

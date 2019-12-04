@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+            NexRPG
+            
+    <body>
+    
+        <div class="app">
+    
+            
+    
+            <form method=post action=@{TalentoR} class="app__form">
+                <h1>
+                    Cadastro de Magia
+                ^{widget}
+                <button>
+                    Salvar

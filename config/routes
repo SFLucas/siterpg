@@ -6,3 +6,5 @@
 / HomeR GET
 
 /cadarma ArmaR GET POST
+
+/cadtalento TalentoR GET POST

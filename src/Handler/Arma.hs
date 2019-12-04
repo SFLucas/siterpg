@@ -22,7 +22,7 @@ formArma = renderBootstrap $ Arma
 
 getArmaR :: Handler Html
 getArmaR = do
-    (widget,enctype) <- generateFormPost formProduto
+    (widget,enctype) <- generateFormPost formArma
     
     defaultLayout $ do
         toWidgetHead $(luciusFile "templates/main.lucius")

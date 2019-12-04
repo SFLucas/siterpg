@@ -33,5 +33,11 @@ postTalentoR = do
     case result of 
         FormSuccess talento -> do
             runDB $ insert talento
-            redirect TalentoR
-        _ -> redirect HomeR 
+            redirect ListTalentoR
+        _ -> redirect HomeR
+        
+getListTalentoR :: Handler Html 
+getListTalentoR = do 
+    talentos <- runDB $ selectList [] [Asc TalentoNome]
+    defaultLayout $ do 
+        $(whamletFile "templates/talentos.hamlet")

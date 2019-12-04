@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                Nome
+            <th>
+                Pré-requisito
+            <th>
+                Descrição
+
+    <tbody>
+        $forall Entity tid talento <- talentos
+            <tr>
+                <td>
+                    #{talentoNome talento}
+                <td>
+                    #{talentoRequisito talento}
+                <td>
+                    #{talentoDescricao talento}

@@ -10,6 +10,7 @@
 /arma/#ArmaId/apagar ApagarArmaR POST
 
 /talento TalentoR GET POST
+/listartalento ListTalentoR GET
 
 /magia MagiaR GET POST
 

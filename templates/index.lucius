@@ -129,6 +129,11 @@
     grid-column: 1/2;
 }
 
+.btn1 > a,.btn2 > a{
+    text-decoration: none;
+    color: #000;
+}
+
 .app__cards__holder__card > .btn1{
     grid-row: 3/4;
     grid-column: 1/2;

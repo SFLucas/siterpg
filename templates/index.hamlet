@@ -40,23 +40,25 @@
                         <p>
                             Arma
                         <img src="https://http2.mlstatic.com/adaga-punhal-medieval-colecionadores-decoraco-na-caixa-D_NQ_NP_977675-MLB25844602855_082017-F.jpg" alt="Arma">
-                        <button class="btn1">
-                            <a href=@{ArmaR}>
-                                Cadastrar
-                        <button class="btn2">
-                            <a href=@{ListArmaR}>
-                                Vizualizar
+                        <div class="btn-holder">
+                            <button class="btn1">
+                                <a href=@{ArmaR}>
+                                    Cadastrar
+                            <button class="btn2">
+                                <a href=@{ListArmaR}>
+                                    Vizualizar
                     
                     <div class="app__cards__holder__card">
                         <p>
                             Talento
                         <img src="https://vignette.wikia.nocookie.net/tsrd/images/d/da/Magia-nivel-0-474x234.jpg/revision/latest?cb=20171228121324&path-prefix=pt-br" alt="Talento">
-                        <button class="btn1">
-                            <a href=@{TalentoR}>
-                                Cadastrar
-                        <button class="btn2">
-                            <a href=@{ListTalentoR}>
-                                Vizualizar
+                        <div class="btn-holder">
+                            <button class="btn1">
+                                <a href=@{TalentoR}>
+                                    Cadastrar
+                            <button class="btn2">
+                                <a href=@{ListTalentoR}>
+                                    Vizualizar
                     
                     <div class="app__cards__holder__card">
                         <p>

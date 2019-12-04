@@ -22,13 +22,13 @@ getArmaR = do
 postArmaR :: Handler Html
 postArmaR = do
     formArma <- runInputGet $ Arma
-        <$> ireq textField "nome"
-        <*> ireq doubleField "preco"
-        <*> ireq doubleField "peso"
-        <*> ireq textField "dano"
-        <*> ireq textField "propriedades"
+        <$> ireq textField "nomeArma"
+        <*> ireq doubleField "precoArma"
+        <*> ireq doubleField "pesoArma"
+        <*> ireq textField "danoArma"
+        <*> ireq textField "propsArma"
         
-    ((result,_),_) <- runFormPost formArma
+    ((result,_),_) <- runInputPost formArma
     case result of 
         FormSuccess arma -> do
             runDB $ insert arma

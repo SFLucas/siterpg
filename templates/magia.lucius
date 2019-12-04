@@ -1,0 +1,43 @@
+.app__form{
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 15px;
+}
+
+.app__form > h1{
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.app__form > 
+.app__form > div:nth-of-type(1){
+    grid-column: 1/span 2;
+}
+
+.app__form > div:nth-of-type(5){
+    grid-column: 3/span 2;
+}
+
+.app__form > div:nth-of-type(1),.app__form > div:nth-of-type(2),.app__form > div:nth-of-type(3){
+    grid-row: 2/3;
+}
+
+.app__form > div:nth-of-type(4),.app__form > div:nth-of-type(5){
+    grid-row: 3/4;
+}
+
+.app__form > div:nth-of-type(6){
+    grid-row: 4/5;
+    grid-column: 1/2;
+    
+}
+
+.app__form > button{
+    grid-row: 5/6;
+    grid-column: -1/-2;
+}

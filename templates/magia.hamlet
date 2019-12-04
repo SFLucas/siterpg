@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>
             NexRPG
-            
+    
     <body>
     
         <div class="app">
@@ -21,9 +21,9 @@
                 <p>
                     Sobre
     
-            <form method=post action=@{TalentoR} class="app__form">
+            <form method=post action=@{MagiaR} class="app__form">
                 <h1>
-                    Cadastro de Talento
+                    Cadastro de Magia
                 ^{widget}
                 <button>
                     Salvar

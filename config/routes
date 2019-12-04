@@ -8,3 +8,5 @@
 /cadarma ArmaR GET POST
 
 /cadtalento TalentoR GET POST
+
+/cadmagia MagiaR GET POST

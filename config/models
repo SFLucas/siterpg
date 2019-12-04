@@ -9,3 +9,11 @@ Talento
     nome Text
     requisito Text
     descricao Text
+    
+Magia
+    nome Text
+    nivel Int
+    tipo Text
+    custo Text
+    descricao Text
+    alcance Int

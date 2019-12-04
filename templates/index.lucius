@@ -117,8 +117,15 @@
     font-size: 25px;
 }
 
-.app__cards__holder__card > button{
+.app__cards__holder__card > .btn1{
     grid-row: 3/4;
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: center;
+}
+
+.app__cards__holder__card > .btn2{
+    grid-row: 4/4;
     grid-column: 1/2;
     align-self: center;
     justify-self: center;

@@ -26,7 +26,8 @@
                 <p>
                     Role um d20 e tenha ela sempre em mãos.
                 <button>
-                    Criar
+                    <a href=@{FichaR}
+                        Criar
             
             <div class="app__cards">
                 <h1>

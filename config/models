@@ -17,3 +17,23 @@ Magia
     custo Text
     descricao Text
     alcance Int
+    
+Ficha
+    nome Text
+    nivel Int
+    vida Int
+    classe Text
+    raca Text
+    arm Int
+    alinha Text
+    prof Int
+    back Text
+    vinculo Text
+    ideal Text
+    defeito Text
+    forca Int
+    destreza Int
+    constit Int
+    inteligencia Int
+    sabedoria Int
+    carisma Int

@@ -10,3 +10,5 @@
 /cadtalento TalentoR GET POST
 
 /cadmagia MagiaR GET POST
+
+/cadficha FichaR GET POST

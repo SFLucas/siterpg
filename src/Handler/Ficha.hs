@@ -40,7 +40,7 @@ postFichaR = do
     ((result,_),_) <- runFormPost formFicha
     case result of 
         FormSuccess ficha -> do
-            runDB $ insert fich
+            runDB $ insert ficha
             redirect ListFichaR
         _ -> redirect HomeR
         

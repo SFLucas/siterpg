@@ -17,10 +17,7 @@ a{
 table{
     align-self: center;
     justify-self: center;
-}
-
-tr:not(:last-child){
-    border-bottom: 1 px solid #B7CDC1;
+    text-align: left;
 }
 
 tr:nth-of-type(even){

@@ -12,8 +12,18 @@ import Text.Julius
 --import Network.HTTP.Types.Status
 import Database.Persist.Postgresql
 
+formArma :: Form Arma 
+formArma = Arma 
+    <$> areq textField "Nome: " Nothing
+    <*> areq doubleField "Preço: " Nothing
+    <*> areq doubleField "Peso: " Nothing
+    <*> areq textField "Dano: " Nothing
+    <*> areq textField "Propriedades: " Nothing
+
 getArmaR :: Handler Html
 getArmaR = do
+    (widget,enctype) <- generateFormPost formProduto
+    
     defaultLayout $ do
         toWidgetHead $(luciusFile "templates/main.lucius")
         toWidgetHead $(luciusFile "templates/arma.lucius")
@@ -21,20 +31,9 @@ getArmaR = do
         
 postArmaR :: Handler Html
 postArmaR = do
-    formArma <- runInputGet $ Arma
-        <$> ireq textField "nomeArma"
-        <*> ireq doubleField "precoArma"
-        <*> ireq doubleField "pesoArma"
-        <*> ireq textField "danoArma"
-        <*> ireq textField "propsArma"
-        
     ((result,_),_) <- runFormPost formArma
     case result of 
         FormSuccess arma -> do
             runDB $ insert arma
-            setMessage [shamlet|
-                <h2>
-                    ARMA INSERIDA COM SUCESSO
-            |]
-            redirect ProdutoR
+            redirect ArmaR
         _ -> redirect HomeR 

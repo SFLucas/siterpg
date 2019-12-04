@@ -6,6 +6,8 @@
 / HomeR GET
 
 /cadarma ArmaR GET POST
+/listararma ListArmaR GET
+/arma/#ArmaId/apagar ApagarArmaR POST
 
 /cadtalento TalentoR GET POST
 

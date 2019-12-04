@@ -127,6 +127,7 @@
     justify-content: space-around;
     grid-row: 3/4;
     grid-column: 1/2;
+    align-self: center;
 }
 
 .btn1 > a,.btn2 > a{

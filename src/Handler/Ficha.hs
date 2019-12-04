@@ -19,9 +19,6 @@ formFicha = renderBootstrap $ Ficha
     <*> areq textField "Raça: " Nothing
     <*> areq textField "Alinhamento: " Nothing
     <*> areq textField "Background: " Nothing
-    <*> areq textField "Vínculos: " Nothing
-    <*> areq textField "Ideais: " Nothing
-    <*> areq textField "Defeitos: " Nothing
     <*> areq intField "Força: " Nothing
     <*> areq intField "Destreza: " Nothing
     <*> areq intField "Constituição: " Nothing

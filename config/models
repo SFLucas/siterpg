@@ -24,9 +24,6 @@ Ficha
     raca Text
     alinha Text
     back Text
-    vinculo Text
-    ideal Text
-    defeito Text
     forca Int
     destreza Int
     constit Int

@@ -1,0 +1,15 @@
+<table>
+    <thead>
+        <tr>
+            <th>
+                NOME
+            <th>
+
+    <tbody>
+        $forall Entity aid arma <- armas
+            <tr>
+                <td>
+                    #{ArmaNome arma}
+                <td>
+                    <form method=post action=@{ApagarArmaR aid}>
+                        <input type="submit" value="X">

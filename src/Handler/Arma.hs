@@ -42,8 +42,7 @@ getListArmaR :: Handler Html
 getListArmaR = do 
     armas <- runDB $ selectList [] [Asc ArmaNome]
     defaultLayout $ do 
-        toWidgetHead $(luciusFile "templates/armas.lucius")
-        $(whamletFile "templates/armas.hamlet")
+        $(whamletFile "templates/listarma.hamlet")
 
 postApagarArmaR :: ArmaId -> Handler Html
 postApagarArmaR aid = do 

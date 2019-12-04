@@ -25,7 +25,7 @@
             <main class="app__form">
                 <h1>
                     Cadastro de Arma
-                <form action=@{ArmaR}>
+                <form method=post action=@{ArmaR}>
                     <input type="text" placeholder="Nome" name="nomeArma">
                     <input type="number" placeholder="Preço" name="precoArma">
                     <input type="number" placeholder="Peso" name="pesoArma">

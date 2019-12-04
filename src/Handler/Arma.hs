@@ -28,13 +28,13 @@ postArmaR = do
         <*> ireq textField "dano"
         <*> ireq textField "propriedades"
         
-    ((result,_),_) <- runInputPost formArma
+    ((result,_),_) <- runFormPost formArma
     case result of 
-        FormSuccess arma -> do 
+        FormSuccess arma -> do
             runDB $ insert arma
             setMessage [shamlet|
                 <h2>
-                    PRODUTO INSERIDO COM SUCESSO
+                    ARMA INSERIDA COM SUCESSO
             |]
             redirect ProdutoR
         _ -> redirect HomeR 

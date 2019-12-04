@@ -13,7 +13,7 @@ import Text.Julius
 import Database.Persist.Postgresql
 
 formArma :: Form Arma 
-formArma = Arma 
+formArma = renderBootstrap $ Arma 
     <$> areq textField "Nome: " Nothing
     <*> areq doubleField "Preço: " Nothing
     <*> areq doubleField "Peso: " Nothing

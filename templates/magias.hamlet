@@ -1,31 +1,48 @@
-<table>
-    <thead>
-        <tr>
-            <th>
-                Nome
-            <th>
-                Nivel
-            <th>
-                Tipo
-            <th>
-                Custo
-            <th>
-                Descrição
-            <th>
-                Alcance
+<div class="app">
+    <nav class="app__nav-bar">
+        <p>
+            <a href=@{HomeR}>
+                NexRPG
+        <p>
+            <a href=@{ListFichaR}>
+                Ficha
+        <p>
+            <a href=@{HomeR}>
+                Base de Dados
 
-    <tbody>
-        $forall Entity mid magia <- magias
-            <tr>
-                <td>
-                    #{magiaNome magia}
-                <td>
-                    #{magiaNivel magia}
-                <td>
-                    #{magiaTipo magia}
-                <td>
-                    #{magiaCusto magia}
-                <td>
-                    #{magiaDescricao magia}
-                <td>
-                    #{magiaAlcance magia}
+     <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Nome
+                    <th>
+                        Nivel
+                    <th>
+                        Tipo
+                    <th>
+                        Custo
+                    <th>
+                        Descrição
+                    <th>
+                        Alcance
+        
+            <tbody>
+                $forall Entity mid magia <- magias
+                    <tr>
+                        <td>
+                            #{magiaNome magia}
+                        <td>
+                            #{magiaNivel magia}
+                        <td>
+                            #{magiaTipo magia}
+                        <td>
+                            #{magiaCusto magia}
+                        <td>
+                            #{magiaDescricao magia}
+                        <td>
+                            #{magiaAlcance magia}
+                            
+    <footer class="app__footer">
+        <p>
+            Todos os direitos reservados.

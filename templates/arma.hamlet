@@ -11,13 +11,14 @@
     
             <nav class="app__nav-bar">
                 <p>
-                    NexRPG
+                    <a href=@{HomeR}>
+                        NexRPG
                 <p>
-                    Ficha
+                    <a href=@{ListFichaR}>
+                        Ficha
                 <p>
-                    Base de Dados
-                <p>
-                    Sobre
+                    <a href=@{HomeR}>
+                        Base de Dados
 
             <form method=post action=@{ArmaR} class="app__form">
                 <h1>

@@ -40,4 +40,5 @@ getListTalentoR :: Handler Html
 getListTalentoR = do 
     talentos <- runDB $ selectList [] [Asc TalentoNome]
     defaultLayout $ do 
+        toWidgetHead $(luciusFile "templates/main.lucius")
         $(whamletFile "templates/talentos.hamlet")

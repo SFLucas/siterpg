@@ -43,4 +43,5 @@ getListMagiaR :: Handler Html
 getListMagiaR = do 
     magias <- runDB $ selectList [] [Asc MagiaNome]
     defaultLayout $ do 
+        toWidgetHead $(luciusFile "templates/main.lucius")
         $(whamletFile "templates/magias.hamlet")

@@ -40,12 +40,13 @@ postFichaR = do
     ((result,_),_) <- runFormPost formFicha
     case result of 
         FormSuccess ficha -> do
-            runDB $ insert ficha
-            redirect FichaR
+            runDB $ insert fich
+            redirect ListFichaR
         _ -> redirect HomeR
         
 getListFichaR :: Handler Html 
 getListFichaR = do 
     fichas <- runDB $ selectList [] [Asc FichaNome]
     defaultLayout $ do 
+        toWidgetHead $(luciusFile "templates/main.lucius")
         $(whamletFile "templates/fichas.hamlet")

@@ -1,51 +1,68 @@
-<table>
-    <thead>
-        <tr>
-            <th>
-                Nome
-            <th>
-                Classe
-            <th>
-                Raça
-            <th>
-                Alinhamento
-            <th>
-                Background
-            <th>
-                Força
-            <th>
-                Destreza
-            <th>
-                Constituição
-            <th>
-                Inteligência
-            <th>
-                Sabedoria
-            <th>
-                Carisma
+<div class="app">
+    <nav class="app__nav-bar">
+        <p>
+            <a href=@{HomeR}>
+                NexRPG
+        <p>
+            <a href=@{ListFichaR}>
+                Ficha
+        <p>
+            <a href=@{HomeR}>
+                Base de Dados
 
-    <tbody>
-        $forall Entity fid ficha <- fichas
-            <tr>
-                <td>
-                    #{fichaNome ficha}
-                <td>
-                    #{fichaClasse ficha}
-                <td>
-                    #{fichaRaca ficha}
-                <td>
-                    #{fichaAlinha ficha}
-                <td>
-                    #{fichaBack ficha}
-                <td>
-                    #{fichaForca ficha}
-                <td>
-                    #{fichaDestreza ficha}
-                <td>
-                    #{fichaConstit ficha}
-                <td>
-                    #{fichaInteligencia ficha}
-                <td>
-                    #{fichaSabedoria ficha}
-                <td>
-                    #{fichaCarisma ficha}
+     <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Nome
+                    <th>
+                        Classe
+                    <th>
+                        Raça
+                    <th>
+                        Alinhamento
+                    <th>
+                        Background
+                    <th>
+                        Força
+                    <th>
+                        Destreza
+                    <th>
+                        Constituição
+                    <th>
+                        Inteligência
+                    <th>
+                        Sabedoria
+                    <th>
+                        Carisma
+        
+            <tbody>
+                $forall Entity fid ficha <- fichas
+                    <tr>
+                        <td>
+                            #{fichaNome ficha}
+                        <td>
+                            #{fichaClasse ficha}
+                        <td>
+                            #{fichaRaca ficha}
+                        <td>
+                            #{fichaAlinha ficha}
+                        <td>
+                            #{fichaBack ficha}
+                        <td>
+                            #{fichaForca ficha}
+                        <td>
+                            #{fichaDestreza ficha}
+                        <td>
+                            #{fichaConstit ficha}
+                        <td>
+                            #{fichaInteligencia ficha}
+                        <td>
+                            #{fichaSabedoria ficha}
+                        <td>
+                            #{fichaCarisma ficha}
+                            
+    <footer class="app__footer">
+        <p>
+            Todos os direitos reservados.

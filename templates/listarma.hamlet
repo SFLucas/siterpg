@@ -10,37 +10,33 @@
             <a href=@{HomeR}>
                 Base de Dados
 
-    <div>
-        <table>
-            <thead>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Nome
+                <th>
+                    Preço
+                <th>
+                    Peso
+                <th>
+                    Dano
+                <th>
+                    Propriedades
+    
+        <tbody>
+            $forall Entity aid arma <- armas
                 <tr>
-                    <th>
-                        Nome
-                    <th>
-                        Preço
-                    <th>
-                        Peso
-                    <th>
-                        Dano
-                    <th>
-                        Propriedades
-        
-            <tbody>
-                $forall Entity aid arma <- armas
-                    <tr>
-                        <td>
-                            #{armaNome arma}
-                        <td>
-                            #{armaPreco arma}
-                        <td>
-                            #{armaPeso arma}
-                        <td>
-                            #{armaDano arma}
-                        <td>
-                            #{armaProp arma}
-                        <td>
-                            <form method=post action=@{ApagarArmaR aid}>
-                                <input type="submit" value="X">
+                    <td>
+                        #{armaNome arma}
+                    <td>
+                        #{armaPreco arma}
+                    <td>
+                        #{armaPeso arma}
+                    <td>
+                        #{armaDano arma}
+                    <td>
+                        #{armaProp arma}
                                 
     <footer class="app__footer">
         <p>

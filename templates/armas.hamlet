@@ -13,7 +13,6 @@
         
 
         <main class="app__form">
-            $forall Entity aid arma <- armas
             
             <h1>
                 Aqui você tem acesso a todas as armas
@@ -24,7 +23,7 @@
                 <p>
                     Ações
                 <div class="app__form__table__row">
-                    
+                    $forall Entity aid arma <- armas
                     <p>
                         #{armaNome arma}
                     <p>

@@ -4,11 +4,13 @@ Arma
     peso Double
     dano Text
     prop Text
+    deriving Show
     
 Talento
     nome Text
     requisito Text
     descricao Text
+    deriving Show
     
 Magia
     nome Text
@@ -17,6 +19,7 @@ Magia
     custo Text
     descricao Text
     alcance Int
+    deriving Show
     
 Ficha
     nome Text
@@ -30,3 +33,4 @@ Ficha
     inteligencia Int
     sabedoria Int
     carisma Int
+    deriving Show

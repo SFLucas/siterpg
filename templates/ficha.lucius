@@ -11,6 +11,13 @@
     grid-auto-flow: dense;
     justify-self: center;
     gap: 5px;
+    grid-row: 2/3;
+}
+
+.app__form__ficha > button {
+    align-self: end;
+    justify-self: center;
+    width: 100%;
 }
 
 .app__form__ficha > h1{

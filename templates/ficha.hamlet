@@ -22,12 +22,13 @@
                         Base de Dados
     
             <form method=post action=@{FichaR} class="app__form">
-                <h1>
-                    Criação de Ficha
-                ^{widget}
-                    
-                <button>
-                    Salvar
+                <div class="app__form__ficha">
+                    <h1>
+                        Criação de Ficha
+                    ^{widget}
+                        
+                    <button>
+                        Salvar
                     
             <footer class="app__footer">
                 <p>

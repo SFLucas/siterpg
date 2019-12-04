@@ -35,7 +35,7 @@ postArmaR = do
     case result of 
         FormSuccess arma -> do
             runDB $ insert arma
-            redirect ListArmaR
+            redirect ArmaR
         _ -> redirect HomeR
         
 getListArmaR :: Handler Html 
@@ -44,9 +44,3 @@ getListArmaR = do
     defaultLayout $ do 
         toWidgetHead $(luciusFile "templates/main.lucius")
         $(whamletFile "templates/listarma.hamlet")
-
-postApagarArmaR :: ArmaId -> Handler Html
-postApagarArmaR aid = do 
-    _ <- runDB $ get404 aid
-    runDB $ delete aid
-    redirect ListArmaR

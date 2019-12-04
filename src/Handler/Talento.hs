@@ -33,7 +33,7 @@ postTalentoR = do
     case result of 
         FormSuccess talento -> do
             runDB $ insert talento
-            redirect ListTalentoR
+            redirect TalentoR
         _ -> redirect HomeR
         
 getListTalentoR :: Handler Html 

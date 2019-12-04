@@ -7,7 +7,6 @@
 
 /arma ArmaR GET POST
 /listararma ListArmaR GET
-/arma/#ArmaId/apagar ApagarArmaR POST
 
 /talento TalentoR GET POST
 /listartalento ListTalentoR GET

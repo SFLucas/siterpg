@@ -10,38 +10,37 @@
             <a href=@{HomeR}>
                 Base de Dados
 
-     <div>
-        <table>
-            <thead>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Nome
+                <th>
+                    Nivel
+                <th>
+                    Tipo
+                <th>
+                    Custo
+                <th>
+                    Descrição
+                <th>
+                    Alcance
+    
+        <tbody>
+            $forall Entity mid magia <- magias
                 <tr>
-                    <th>
-                        Nome
-                    <th>
-                        Nivel
-                    <th>
-                        Tipo
-                    <th>
-                        Custo
-                    <th>
-                        Descrição
-                    <th>
-                        Alcance
-        
-            <tbody>
-                $forall Entity mid magia <- magias
-                    <tr>
-                        <td>
-                            #{magiaNome magia}
-                        <td>
-                            #{magiaNivel magia}
-                        <td>
-                            #{magiaTipo magia}
-                        <td>
-                            #{magiaCusto magia}
-                        <td>
-                            #{magiaDescricao magia}
-                        <td>
-                            #{magiaAlcance magia}
+                    <td>
+                        #{magiaNome magia}
+                    <td>
+                        #{magiaNivel magia}
+                    <td>
+                        #{magiaTipo magia}
+                    <td>
+                        #{magiaCusto magia}
+                    <td>
+                        #{magiaDescricao magia}
+                    <td>
+                        #{magiaAlcance magia}
                             
     <footer class="app__footer">
         <p>

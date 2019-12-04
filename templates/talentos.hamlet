@@ -10,26 +10,25 @@
             <a href=@{HomeR}>
                 Base de Dados
 
-     <div>
-        <table>
-            <thead>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Nome
+                <th>
+                    Pré-requisito
+                <th>
+                    Descrição
+    
+        <tbody>
+            $forall Entity tid talento <- talentos
                 <tr>
-                    <th>
-                        Nome
-                    <th>
-                        Pré-requisito
-                    <th>
-                        Descrição
-        
-            <tbody>
-                $forall Entity tid talento <- talentos
-                    <tr>
-                        <td>
-                            #{talentoNome talento}
-                        <td>
-                            #{talentoRequisito talento}
-                        <td>
-                            #{talentoDescricao talento}
+                    <td>
+                        #{talentoNome talento}
+                    <td>
+                        #{talentoRequisito talento}
+                    <td>
+                        #{talentoDescricao talento}
                     
     <footer class="app__footer">
         <p>

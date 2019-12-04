@@ -36,7 +36,7 @@ postMagiaR = do
     case result of 
         FormSuccess magia -> do
             runDB $ insert magia
-            redirect ListMagiaR
+            redirect MagiaR
         _ -> redirect HomeR
         
 getListMagiaR :: Handler Html 

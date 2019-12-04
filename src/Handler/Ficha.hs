@@ -41,7 +41,7 @@ postFichaR = do
     case result of 
         FormSuccess ficha -> do
             runDB $ insert ficha
-            redirect ListFichaR
+            redirect FichaR
         _ -> redirect HomeR
         
 getListFichaR :: Handler Html 

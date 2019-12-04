@@ -46,7 +46,7 @@
     margin-bottom: 20px;
 }
 
-.app__main-content > button{
+.app__main-content > a{
     align-self: center;
     justify-self: center;
 }

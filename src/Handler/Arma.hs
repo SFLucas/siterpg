@@ -47,5 +47,6 @@ getListArmaR = do
 
 postApagarArmaR :: ArmaId -> Handler Html
 postApagarArmaR aid = do 
-    _ <- runDB $ delete aid
+    _ <- runDB $ get404 aid
+    runDB $ delete aid
     redirect ListArmaR

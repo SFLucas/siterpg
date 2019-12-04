@@ -9,7 +9,7 @@
         $forall Entity aid arma <- armas
             <tr>
                 <td>
-                    #{ArmaNome arma}
+                    #{armaNome arma}
                 <td>
                     <form method=post action=@{ApagarArmaR aid}>
                         <input type="submit" value="X">

@@ -11,7 +11,7 @@ body{
 .app{
     height: 100%;
     width: 100%;
-    background-color: #5377A6;
+    background-color: #F5F5EC;
     display: grid;
     grid-template-rows: 60px 1fr 60px;
     overflow-y: auto;
@@ -23,7 +23,7 @@ body{
     align-items: center;
     justify-items: center;
     gap: 10px;
-    border: 3px solid #027368;
+    border: 3px solid #B7CDC1;
 }
 
 .app__nav-bar > p{
@@ -79,7 +79,7 @@ button:hover{
 }
 
 .app__footer{
-    border: 3px solid #027368;
+    border: 3px solid #B7CDC1;
     display: grid;
 }
 

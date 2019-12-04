@@ -26,12 +26,12 @@ formFicha = renderBootstrap $ Ficha
     <*> areq textField "Vínculos: " Nothing
     <*> areq textField "Ideais: " Nothing
     <*> areq textField "Defeitos: " Nothing
-    <*> areq textField "Força: " Nothing
-    <*> areq textField "Destreza: " Nothing
-    <*> areq textField "Constituição: " Nothing
-    <*> areq textField "Inteligência: " Nothing
-    <*> areq textField "Sabedoria: " Nothing
-    <*> areq textField "Carisma: " Nothing
+    <*> areq intField "Força: " Nothing
+    <*> areq intField "Destreza: " Nothing
+    <*> areq intField "Constituição: " Nothing
+    <*> areq intField "Inteligência: " Nothing
+    <*> areq intField "Sabedoria: " Nothing
+    <*> areq intField "Carisma: " Nothing
 
 getFichaR :: Handler Html
 getFichaR = do
